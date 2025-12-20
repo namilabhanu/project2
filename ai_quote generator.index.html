@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quote Generator</title>
+    <link rel="stylesheet" href="/satatic/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>AI Quote Generator</h1>
+            <form method="post">
+                <select name="topic" required>
+                    <option value="">Select Topic </option>
+                    <option value="motivation">Motivation</option>
+                    <option value="life">Life</option>
+                    <option value="humor">Humor</option>
+                    <option value="love">Love</option>
+                </select>
+                <button type="submit">Generate Quote</button>
+        </form>
+
+        {% if quote %}
+        <p class="quote">{{ quote }}</p>
+        {% endif %}
+        </div>
+    </head>
+<body>
+    
+</body>
+</html>
